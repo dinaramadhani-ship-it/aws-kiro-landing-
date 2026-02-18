@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Kiro - Build Faster. Stay Secure. | Berca</title>
+    <meta name="description" content="AI-powered development with enterprise-grade governance by Berca. Accelerate secure software development with AWS Kiro.">
+    
+    <!-- Google Analytics - YOUR ID: G-QRBC177MTG -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QRBC177MTG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-QRBC177MTG');
+    </script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; line-height: 1.6; color: #333; }
+        .hero { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e8ba3 100%); color: white; padding: 100px 20px; }
+        .hero-content { max-width: 1200px; margin: 0 auto; }
+        .hero h1 { font-size: 3.5em; margin-bottom: 10px; font-weight: 800; }
+        .hero .subtitle { font-size: 2em; margin-bottom: 20px; color: #ffa500; }
+        .hero .description { font-size: 1.3em; margin-bottom: 40px; max-width: 700px; }
+        .cta-button { display: inline-block; background: linear-gradient(135deg, #ff9900 0%, #ffa500 100%); color: #1e3c72; padding: 18px 50px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.2em; cursor: pointer; }
+        section { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
+        .section-title { text-align: center; font-size: 2.8em; margin-bottom: 20px; color: #1e3c72; }
+        .section-subtitle { text-align: center; font-size: 1.3em; color: #666; margin-bottom: 50px; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; }
+        .feature-card { background: white; padding: 40px 30px; border-radius: 12px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.08); }
+        .feature-icon { width: 90px; height: 90px; margin: 0 auto 25px; background: linear-gradient(135deg, #1e3c72, #2a5298); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5em; }
+        .challenges-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .challenge-item { display: flex; align-items: center; padding: 20px 25px; background: linear-gradient(135deg, #fff5e6 0%, #ffffff 100%); border-radius: 8px; border-left: 5px solid #ff9900; }
+        .impact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; }
+        .impact-column { background: white; padding: 50px 40px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+        .impact-column h3 { color: #1e3c72; font-size: 2em; margin-bottom: 30px; text-align: center; border-bottom: 4px solid #ff9900; padding-bottom: 15px; }
+        .impact-item { padding: 15px 0; display: flex; align-items: center; border-bottom: 1px solid #f0f0f0; }
+        .impact-item::before { content: '✓'; color: #28a745; margin-right: 15px; font-weight: bold; }
+        .why-berca { background: linear-gradient(135deg, #ff9900 0%, #ffa500 100%); color: white; }
+        .why-berca .section-title { color: white; }
+        .benefits-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1000px; margin: 40px auto; }
+        .benefits-list { background: rgba(255,255,255,0.1); padding: 30px; border-radius: 10px; }
+        .benefit-item { padding: 15px; margin: 10px 0; background: rgba(255,255,255,0.15); border-radius: 6px; display: flex; align-items: center; }
+        .benefit-item::before { content: '✓'; background: white; color: #ff9900; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; }
+        .contact-section { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white; padding: 100px 20px; }
+        .contact-section .section-title { color: white; }
+        .contact-section .section-subtitle { color: rgba(255,255,255,0.9); }
+        .form-container { max-width: 650px; margin: 50px auto 0; background: white; padding: 50px 40px; border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
+        .form-group { margin-bottom: 25px; }
+        .form-group label { display: block; color: #333; margin-bottom: 8px; font-weight: 600; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 14px 16px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1em; }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: #ff9900; }
+        .form-group textarea { min-height: 120px; resize: vertical; }
+        .checkbox-group { display: flex; align-items: flex-start; gap: 12px; }
+        .checkbox-group input[type="checkbox"] { width: auto; margin-top: 4px; }
+        .submit-btn { width: 100%; background: linear-gradient(135deg, #ff9900 0%, #ffa500 100%); color: #1e3c72; padding: 18px; border: none; border-radius: 8px; font-size: 1.2em; font-weight: bold; cursor: pointer; }
+        .success-message { display: none; background: #28a745; color: white; padding: 25px; border-radius: 8px; margin-bottom: 25px; text-align: center; }
+        .error-message { display: none; background: #dc3545; color: white; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center; }
+        footer { background: #0f1f3d; color: white; text-align: center; padding: 40px 20px; }
+        .partner-logos { display: flex; justify-content: center; align-items: center; gap: 30px; margin: 25px 0; font-size: 1.8em; font-weight: bold; }
+        .footer-links a { color: #ffa500; text-decoration: none; margin: 0 15px; }
+        @media (max-width: 768px) { .hero h1 { font-size: 2.2em; } .section-title { font-size: 2em; } }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Build Faster. Stay Secure.</h1>
+            <p class="subtitle">with AWS Kiro</p>
+            <p class="description">AI-powered development, delivered with enterprise-grade governance by Berca</p>
+            <a href="#request-demo" class="cta-button">Request Demo</a>
+        </div>
+    </section>
+
+    <section class="what-is-kiro">
+        <h2 class="section-title">What is AWS Kiro?</h2>
+        <p class="section-subtitle">An AI-native environment from AWS for secure application delivery</p>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>AI-Assisted Development</h3>
+                <p>Faster coding, review & documentation with intelligent AI support</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3>Security by Design</h3>
+                <p>Built-in AWS security & compliance from the ground up</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Operational Efficiency</h3>
+                <p>Standardized workflows, less code, faster deployment</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Cost Optimization</h3>
+                <p>Well-architected from day one for maximum efficiency</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="challenges">
+        <h2 class="section-title">Today's Development Challenges</h2>
+        <div class="challenges-grid">
+            <div class="challenge-item">✗ Slow Release Cycles</div>
+            <div class="challenge-item">✗ Security Added Too Late</div>
+            <div class="challenge-item">✗ High Operational Risk</div>
+            <div class="challenge-item">✗ Inefficient Cloud Usage</div>
+        </div>
+    </section>
+
+    <section class="impact">
+        <h2 class="section-title">Accelerating Secure Software Development with AI</h2>
+        <div class="impact-grid">
+            <div class="impact-column">
+                <h3>📊 Business Impact</h3>
+                <div class="impact-item">Faster Time-to-Market</div>
+                <div class="impact-item">Reduced Security Risk</div>
+                <div class="impact-item">Better Governance</div>
+            </div>
+            <div class="impact-column">
+                <h3>⚙️ Technical Impact</h3>
+                <div class="impact-item">Cleaner Code</div>
+                <div class="impact-item">Lower Technical Debt</div>
+                <div class="impact-item">Optimized Architecture</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-berca">
+        <h2 class="section-title">Why Implement AWS Kiro with Berca?</h2>
+        <div class="benefits-container">
+            <div class="benefits-list">
+                <h4 style="text-align:center; margin-bottom:20px;">Our Expertise</h4>
+                <div class="benefit-item">AWS Advanced Partner</div>
+                <div class="benefit-item">Local Enterprise Experts</div>
+                <div class="benefit-item">Business-Driven Solutions</div>
+                <div class="benefit-item">End-to-End Support</div>
+            </div>
+            <div class="benefits-list">
+                <h4 style="text-align:center; margin-bottom:20px;">Our Commitment</h4>
+                <div class="benefit-item">Business Outcomes Focused</div>
+                <div class="benefit-item">Local Support, Global Standards</div>
+                <div class="benefit-item">Enterprise & Regulated Expertise</div>
+                <div class="benefit-item">Long-Term Optimization Partner</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="request-demo">
+        <h2 class="section-title">Transform Your Software Delivery</h2>
+        <p class="section-subtitle">Get started with AWS Kiro — guided by Berca experts</p>
+        
+        <div class="form-container">
+            <div class="success-message" id="successMessage">
+                <strong>✓ Thank you!</strong><br>Your request has been submitted successfully.
+            </div>
+            <div class="error-message" id="errorMessage">
+                <strong>✗ Error</strong><br><span id="errorText">Please fill in all required fields.</span>
+            </div>
+            
+            <form id="demoForm" onsubmit="handleSubmit(event)">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div class="form-group">
+                        <label>First Name *</label>
+                        <input type="text" name="firstName" required placeholder="John">
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name *</label>
+                        <input type="text" name="lastName" required placeholder="Doe">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Work Email *</label>
+                    <input type="email" name="email" required placeholder="john@company.com">
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone" placeholder="+1 (555) 123-4567">
+                </div>
+                <div class="form-group">
+                    <label>Company Name *</label>
+                    <input type="text" name="company" required placeholder="Your Company Inc.">
+                </div>
+                <div class="form-group">
+                    <label>Job Role</label>
+                    <select name="role">
+                        <option value="">Select your role</option>
+                        <option value="developer">Developer/Engineer</option>
+                        <option value="architect">Solutions Architect</option>
+                        <option value="manager">IT Manager</option>
+                        <option value="cto">CTO/VP Engineering</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Tell us about your project</label>
+                    <textarea name="message" placeholder="What challenges are you facing?"></textarea>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="consent" required>
+                        <label style="font-weight:normal; font-size:0.9em;">I agree to be contacted by Berca about AWS Kiro *</label>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Talk to Berca AWS Expert</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="partner-logos">
+            <span style="color: #FF9900;">aws</span>
+            <span>|</span>
+            <span style="color: #FF9900;">Berca</span>
+        </div>
+        <p>&copy; 2026 Berca. All rights reserved. | AWS Advanced Partner</p>
+    </footer>
+
+    <script>
+        function gtag_event(eventName, eventParams) {
+            if (typeof gtag !== 'undefined') {
+                gtag('event', eventName, eventParams);
+            }
+        }
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const successMsg = document.getElementById('successMessage');
+            const errorMsg = document.getElementById('errorMessage');
+            const errorText = document.getElementById('errorText');
+            
+            successMsg.style.display = 'none';
+            errorMsg.style.display = 'none';
+            
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);
+            
+            if (!data.firstName || !data.lastName || !data.email || !data.company || !data.consent) {
+                errorText.textContent = 'Please fill in all required fields.';
+                errorMsg.style.display = 'block';
+                setTimeout(() => errorMsg.style.display = 'none', 5000);
+                return;
+            }
+            
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(data.email)) {
+                errorText.textContent = 'Please enter a valid email address.';
+                errorMsg.style.display = 'block';
+                setTimeout(() => errorMsg.style.display = 'none', 5000);
+                return;
+            }
+            
+            gtag_event('conversion', {
+                'event_category': 'Form',
+                'event_label': 'Demo_Request_Submit',
+                'value': 1
+            });
+            
+            await new Promise(resolve => setTimeout(resolve, 1500));
+            
+            successMsg.style.display = 'block';
+            form.reset();
+            
+            setTimeout(() => {
+                successMsg.style.display = 'none';
+            }, 10000);
+        }
+
+        window.addEventListener('load', function() {
+            gtag_event('page_view', {
+                'page_title': 'AWS Kiro Landing Page',
+                'page_location': window.location.href
+            });
+        });
+
+        console.log('🚀 AWS Kiro Landing Page Loaded');
+    </script>
+</body>
+</html>
